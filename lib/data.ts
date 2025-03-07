@@ -32,7 +32,7 @@ export const teams: Team[] = [
     description: "Handles Logistics, planning and operations",
     longDescription:
       "The Management Team is responsible for overseeing all logistical aspects of CRESA events and initiatives. They coordinate resources, develop operational plans, and ensure smooth execution of all activities. Their meticulous planning and organizational skills are the backbone of our success.",
-    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1KE0TqaKeL5jxcMvznRNRDaykikPfbrJmRA&s",
+    coverImage: "https://assets.entrepreneur.com/content/3x2/2000/1618600283-shutterstock-1504573049.jpeg",
     members: [
       {
         name: "Alex Johnson",
@@ -63,12 +63,12 @@ export const teams: Team[] = [
     description: "Manages branding, graphics and UI/UX",
     longDescription:
       "The Design Team is the creative force behind CRESA's visual identity. They craft stunning graphics, develop our brand guidelines, and create intuitive user interfaces for our digital platforms. Their artistic vision and technical skills ensure that all CRESA materials are visually compelling and user-friendly.",
-    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOfpkTXaYFJfqDDuv7NuvsSLYoXmFZemby1Q&s",
+    coverImage: "https://media.istockphoto.com/id/1218511457/photo/top-view-asian-ux-developer-and-ui-designer-brainstorming-about-mobile-app-interface.jpg?s=612x612&w=0&k=20&c=Py1-O62Y4vFzJ_BoMPdRmr8h-bqN1gcFZy6tWWSw0JI=",
     members: [
       {
         name: "Olivia Kim",
         role: "Creative Director",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person1.jpg",
         isSenior: true,
       },
       {
@@ -84,7 +84,7 @@ export const teams: Team[] = [
       {
         name: "James Wilson",
         role: "Brand Strategist",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person1.jpg",
       },
     ],
   },
@@ -99,23 +99,23 @@ export const teams: Team[] = [
       {
         name: "Aisha Patel",
         role: "Cultural Director",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person3.jpg",
         isSenior: true,
       },
       {
         name: "Carlos Mendez",
         role: "Event Coordinator",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person10.jpg",
       },
       {
         name: "Priya Singh",
         role: "Cultural Ambassador",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person1.jpg",
       },
       {
         name: "Jamal Washington",
         role: "Social Activities Planner",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person2.jpg",
       },
     ],
   },
@@ -130,23 +130,23 @@ export const teams: Team[] = [
       {
         name: "Emma Thompson",
         role: "Social Media Director",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person3.jpg",
         isSenior: true,
       },
       {
         name: "Ryan Lee",
         role: "Content Creator",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person10.jpg",
       },
       {
         name: "Zoe Garcia",
         role: "Sponsorship Coordinator",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person1.jpg",
       },
       {
         name: "Tyler Johnson",
         role: "Budget Analyst",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person2.jpg",
       },
     ],
   },
@@ -156,28 +156,28 @@ export const teams: Team[] = [
     description: "Manages budgeting and financial planning",
     longDescription:
       "The Finance Team ensures CRESA's financial health and sustainability. They develop budgets, track expenses, secure funding, and manage financial resources with precision and foresight. Their careful stewardship allows us to maximize our impact while maintaining fiscal responsibility.",
-    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMpTM4IwpgvAlsmYXoVtIE_EBWEqvs_S4nlg&s",
+    coverImage: "https://www.rothstaffing.com/wp-content/uploads/MicrosoftTeams-image-9.jpg",
     members: [
       {
         name: "Daniel Kim",
         role: "Finance Director",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person3.jpg",
         isSenior: true,
       },
       {
         name: "Natasha Sharma",
         role: "Budget Manager",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person10.jpg",
       },
       {
         name: "Marcus Johnson",
         role: "Financial Analyst",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "//images/person2.jpg",
       },
       {
         name: "Lisa Chen",
         role: "Sponsorship Manager",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "//images/person3.jpg",
       },
     ],
   },
@@ -192,23 +192,23 @@ export const teams: Team[] = [
       {
         name: "Jordan Taylor",
         role: "Sports Director",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "//images/person10.jpg",
         isSenior: true,
       },
       {
         name: "Leila Patel",
         role: "Event Coordinator",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person3.jpg",
       },
       {
         name: "Diego Hernandez",
         role: "Sports Trainer",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person2.jpg",
       },
       {
         name: "Samantha Lee",
         role: "Tournament Organizer",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person1.jpg",
       },
     ],
   },
@@ -223,28 +223,28 @@ export const teams: Team[] = [
       {
         name: "Victoria Zhang",
         role: "Executive Director",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person10.jpg",
         isSenior: true,
       },
       {
         name: "Robert Johnson",
         role: "Strategy Officer",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person2.jpg",
       },
       {
         name: "Ananya Patel",
         role: "Operations Director",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person1.jpg",
       },
       {
         name: "William Chen",
         role: "Community Relations",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person3.jpg",
       },
       {
         name: "Maya Rodriguez",
         role: "Innovation Lead",
-        image: "/placeholder.svg?height=300&width=300",
+        image: "/images/person10.jpg",
       },
     ],
   },
