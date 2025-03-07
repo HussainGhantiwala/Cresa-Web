@@ -1,16 +1,31 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Calendar, MapPin, ExternalLink } from "lucide-react"
-import { events } from "@/lib/data"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Calendar, MapPin, ExternalLink } from "lucide-react";
+import { events } from "@/lib/data";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+// Define TypeScript type for an event
+type Event = {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  location: string;
+  status: string;
+  coverImage?: string;
+  registrationLink?: string;
+};
 
 export default function EventsPage() {
-  const [activeTab, setActiveTab] = useState("all")
+  const [activeTab, setActiveTab] = useState("all");
 
-  const filteredEvents = activeTab === "all" ? events : events.filter((event) => event.status === activeTab)
+  const filteredEvents =
+    activeTab === "all"
+      ? events
+      : events.filter((event) => event.status === activeTab);
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -26,14 +41,22 @@ export default function EventsPage() {
               CRESA <span className="text-orange-500">Events</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Discover our exciting lineup of upcoming and ongoing events. Join us and be part of the CRESA experience.
+              Discover our exciting lineup of upcoming and ongoing events. Join
+              us and be part of the CRESA experience.
             </p>
           </motion.div>
 
-          <Tabs defaultValue="all" className="w-full" onValueChange={setActiveTab}>
+          <Tabs
+            defaultValue="all"
+            className="w-full"
+            onValueChange={setActiveTab}
+          >
             <div className="flex justify-center mb-12">
               <TabsList className="bg-gray-900/50 p-1">
-                <TabsTrigger value="all" className="data-[state=active]:bg-orange-600 data-[state=active]:text-white">
+                <TabsTrigger
+                  value="all"
+                  className="data-[state=active]:bg-orange-600 data-[state=active]:text-white"
+                >
                   All Events
                 </TabsTrigger>
                 <TabsTrigger
@@ -64,10 +87,10 @@ export default function EventsPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
 
-function EventsList({ events }) {
+function EventsList({ events }: { events: Event[] }) {
   return (
     <div className="grid grid-cols-1 gap-8">
       {events.map((event, index) => (
@@ -81,15 +104,22 @@ function EventsList({ events }) {
         </motion.div>
       ))}
     </div>
-  )
+  );
 }
 
-function EventCard({ event }) {
+function EventCard({ event }: { event: Event }) {
   return (
     <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-orange-900/20 transition-all duration-300 hover:translate-y-[-5px]">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/3 h-64 md:h-auto relative">
-          <img src={event.coverImage || "https://www.vectara.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fp0pvmro2%2Fproduction%2F5d53d465612d1379bfa67c0aa16b2c7af51cb5cb-1792x1024.jpg%3Frect%3D0%2C6%2C1792%2C1013%26w%3D1408%26h%3D796%26q%3D90%26fit%3Dcrop%26auto%3Dformat&w=1920&q=100"} alt={event.title} className="w-full h-full object-cover" />
+          <img
+            src={
+              event.coverImage ||
+              "https://www.vectara.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fp0pvmro2%2Fproduction%2F5d53d465612d1379bfa67c0aa16b2c7af51cb5cb-1792x1024.jpg%3Frect%3D0%2C6%2C1792%2C1013%26w%3D1408%26h%3D796%26q%3D90%26fit%3Dcrop%26auto%3Dformat&w=1920&q=100"
+            }
+            alt={event.title}
+            className="w-full h-full object-cover"
+          />
           <div className="absolute top-4 right-4 bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-medium">
             {event.status.charAt(0).toUpperCase() + event.status.slice(1)}
           </div>
@@ -121,6 +151,5 @@ function EventCard({ event }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
