@@ -31,7 +31,7 @@ export default function TeamPage() {
     return (
       <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4">
         <h1 className="text-3xl font-bold mb-4">Team Not Found</h1>
-        <p className="mb-8">The team you're looking for doesn't exist.</p>
+        <p className="mb-8">The team you&apos;re looking for doesn&apos;t exist.</p>
         <Link
           href="/"
           className="px-6 py-3 bg-orange-600 text-white rounded-full font-medium hover:bg-orange-700 transition-colors inline-flex items-center"
